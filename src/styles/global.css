@@ -24,7 +24,12 @@
 
 html {
   box-sizing: border-box;
+}
+
+body {
   font-family: var(--mainFont);
+  background-color: var(--veryDarkBlue);
+  color:white;
 }
 
 *,
