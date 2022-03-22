@@ -1,0 +1,28 @@
+{
+  "name": "time-tracking-dashboard-main",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "build": "npx parcel build src/index.html",
+    "start": "npx parcel src/index.html",
+    "dev": "npx parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timamero/frontend-mentor-time-tracking-dashboard.git"
+  },
+  "author": "Fatima Camero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timamero/frontend-mentor-time-tracking-dashboard/issues"
+  },
+  "homepage": "https://github.com/timamero/frontend-mentor-time-tracking-dashboard#readme",
+  "devDependencies": {
+    "parcel": "^2.3.2"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
