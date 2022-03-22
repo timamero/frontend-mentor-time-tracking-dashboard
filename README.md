@@ -18,7 +18,7 @@ Your users should be able to:
 
 [View more information about the challenge](challenge.md)
 
-## My Approach
+## My Process
 
 - Mobile first development
 - Create with React
