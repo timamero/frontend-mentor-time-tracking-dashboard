@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
 :root {
 
   /* Primary Colors */
@@ -14,4 +16,24 @@
   --darkBlue: hsl(235, 46%, 20%);
   --desaturatedBlue: hsl(235, 45%, 61%);
   --paleBlue: hsl(236, 100%, 87%);
+
+  /* Typography */
+  --titleFontSize: 18px;
+  --mainFont: 'Rubik', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--mainFont);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
 }
