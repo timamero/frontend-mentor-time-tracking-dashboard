@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/timamero/frontend-mentor-time-tracking-dashboard#readme",
   "devDependencies": {
-    "parcel": "^2.3.2"
+    "parcel": "^2.3.2",
+    "postcss": "^8.4.12",
+    "postcss-modules": "^4.3.1"
   },
   "dependencies": {
     "react": "^17.0.2",
