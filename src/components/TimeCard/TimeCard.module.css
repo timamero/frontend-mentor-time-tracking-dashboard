@@ -1,0 +1,17 @@
+.card {
+  width: 320px;
+  background-color: var(--darkBlue);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border-top-left-radius: var(--borderRadius);
+  border-top-right-radius: var(--borderRadius);
+  overflow: hidden;
+}
+
+.header img {
+  transform: translate(-18px, -10px);
+}

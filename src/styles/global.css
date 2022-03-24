@@ -20,6 +20,8 @@
   /* Typography */
   --titleFontSize: 18px;
   --mainFont: 'Rubik', sans-serif;
+
+  --borderRadius: 1rem;
 }
 
 html {
