@@ -16,6 +16,9 @@
 }
 
 .main {
+  transform: translateY(-40px);
+  padding: 26px;
+  border-radius: var(--borderRadius);
   background-color: var(--darkBlue);
 }
 
@@ -28,4 +31,8 @@
 
 .flexGrid > * {
   flex: 2 1 50%;
+}
+
+.ellipsis, .lastHours {
+  text-align: right;
 }
