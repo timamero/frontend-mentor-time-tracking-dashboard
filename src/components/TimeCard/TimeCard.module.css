@@ -1,6 +1,5 @@
 .card {
   width: 320px;
-  background-color: var(--darkBlue);
 }
 
 .header {
@@ -14,4 +13,19 @@
 
 .header img {
   transform: translate(-18px, -10px);
+}
+
+.main {
+  background-color: var(--darkBlue);
+}
+
+.flexGrid {
+  background-color: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.flexGrid > * {
+  flex: 2 1 50%;
 }
