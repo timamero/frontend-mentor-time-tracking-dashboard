@@ -27,6 +27,8 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  align-items: center;
+  row-gap: 6px;
 }
 
 .flexGrid > * {
@@ -35,4 +37,18 @@
 
 .ellipsis, .lastHours {
   text-align: right;
+}
+
+.title {
+  font-size: var(--titleFontSize);
+}
+
+.hours {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.lastHours {
+  font-size: 14px;
+  color: var(--paleBlue)
 }

@@ -19,7 +19,7 @@ const TimeCard = () => {
             <img src={require('../../images/icon-ellipsis.svg')} />
           </div>
           <div className={styles.hours}>32hrs</div>
-          <div className={styles.lastHours}>LastWeek - 36hrs</div>
+          <div className={styles.lastHours}>Last Week - 36hrs</div>
         </div>
       </div>
     </div>
