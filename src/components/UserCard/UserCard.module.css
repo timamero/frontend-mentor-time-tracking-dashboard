@@ -30,3 +30,19 @@
   font-size: 24px;
   font-weight: 300;
 }
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 32px 26px;
+}
+
+.menu button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: var(--paleBlue);
+  font-family: var(--mainFont);
+  font-size: 18px;
+}
