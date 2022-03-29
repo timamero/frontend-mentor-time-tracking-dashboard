@@ -3,8 +3,7 @@ import Dashboard from './components/Dashboard'
 
 const App = () => {
   return (
-    <div>
-      Time Tracking Dashboard
+    <div className="container">
       <Dashboard />
     </div>
   )

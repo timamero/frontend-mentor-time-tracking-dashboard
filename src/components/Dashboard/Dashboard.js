@@ -5,10 +5,14 @@ import TimeCard from '../TimeCard'
 
 const Dashboard = () => {
   return (
-    <div>
+    <div className={styles.dashboard}>
       <UserCard />
       <TimeCard />
-      
+      <TimeCard />
+      <TimeCard />
+      <TimeCard />
+      <TimeCard />
+      <TimeCard />
     </div>
   )
 }
