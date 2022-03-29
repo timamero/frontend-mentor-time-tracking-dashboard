@@ -2,3 +2,25 @@
   display: grid;
   row-gap: 24px;
 }
+
+@media screen and (min-width: 600px) {
+  .dashboard {
+    grid-template-columns: 50% 50%;
+  }
+
+  .dashboard > *:first-child {
+    grid-column: 1 / span 2;
+    justify-self: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .dashboard {
+    grid-template-columns: repeat(4, 25%);
+  }
+
+  .dashboard > *:first-child {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+  }
+}
