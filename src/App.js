@@ -1,11 +1,11 @@
 import React from 'react'
-import Grid from './components/Grid'
+import Dashboard from './components/Dashboard'
 
 const App = () => {
   return (
     <div>
       Time Tracking Dashboard
-      <Grid />
+      <Dashboard />
     </div>
   )
 }
