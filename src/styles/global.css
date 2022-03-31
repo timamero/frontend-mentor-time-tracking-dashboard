@@ -21,7 +21,8 @@
   --titleFontSize: 18px;
   --mainFont: 'Rubik', sans-serif;
 
-  --cardWidth: 320px;
+  --mobileCardWidth: 320px;
+  --desktopCardWidth: 250px;
   --borderRadius: 1rem;
 }
 

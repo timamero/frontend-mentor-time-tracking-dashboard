@@ -3,7 +3,7 @@ import styles from './TimeCard.module.css'
 
 const TimeCard = () => {
   const headerBackgroundColor = getComputedStyle(document.body).getPropertyValue('--lightRed1')
-  // console.log('color: ', headerBackgroundColor)
+
   return (
     <div className={styles.card}>
       <div 

@@ -1,6 +1,6 @@
 .card {
   background-color: var(--darkBlue);
-  width: var(--cardWidth);
+  width: var(--mobileCardWidth);
   border-radius: var(--borderRadius);
 }
 

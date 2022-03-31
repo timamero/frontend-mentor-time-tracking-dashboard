@@ -1,5 +1,5 @@
 .card {
-  width: var(--cardWidth);
+  width: var(--mobileCardWidth);
 }
 
 .background {
@@ -56,4 +56,11 @@
 .lastHours {
   font-size: 14px;
   color: var(--paleBlue)
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    width: var(--desktopCardWidth);
+  }
+
 }
