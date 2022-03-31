@@ -33,7 +33,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  row-gap: 6px;
+  row-gap: 14px;
 }
 
 .flexGrid > * {
@@ -63,4 +63,21 @@
     width: var(--desktopCardWidth);
   }
 
+  .iconWrapper {
+    height: 48px;
+  }
+
+  .flexGrid > * {
+    margin-bottom: 2px;
+  }
+
+  .hours {
+    margin-top: 14px;
+    font-size: 50px;
+  }
+
+  .hours, .lastHours {
+    flex: 1 1 100%;
+    text-align: left;
+  }
 }
