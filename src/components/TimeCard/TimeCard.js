@@ -2,13 +2,11 @@ import React from 'react'
 import styles from './TimeCard.module.css'
 
 const TimeCard = () => {
-  const headerBackgroundColor = getComputedStyle(document.body).getPropertyValue('--lightRed1')
-
   return (
     <div className={styles.card}>
       <div 
         className={styles.background}
-        style={{backgroundColor: headerBackgroundColor}}
+        style={{backgroundColor: 'var(--lightRed1)'}}
       >
         <div className={styles.iconWrapper}>
           <img src={require('../../images/icon-work.svg')} />

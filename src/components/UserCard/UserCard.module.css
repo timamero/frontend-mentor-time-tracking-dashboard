@@ -16,7 +16,7 @@
 
 .header img {
   width: 70px;
-  border: 2px solid #fff;
+  border: 3px solid #fff;
   border-radius: 70px;
 }
 
@@ -45,4 +45,37 @@
   color: var(--paleBlue);
   font-family: var(--mainFont);
   font-size: 18px;
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: var(--desktopCardWidth);
+    height: 100%;
+    margin-right: 20px;
+  }
+
+  .header {
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header img {
+    width: 80px;
+    margin-bottom: 40px;
+  }
+
+  .header p:nth-child(2) {
+    font-size: 40px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 16px;
+    padding: 32px 32px;
+  }
 }
