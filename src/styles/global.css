@@ -24,6 +24,7 @@
   --mobileCardWidth: 320px;
   --desktopCardWidth: 250px;
   --borderRadius: 1rem;
+  --fastTransition: all 0.25s linear;
 }
 
 html {

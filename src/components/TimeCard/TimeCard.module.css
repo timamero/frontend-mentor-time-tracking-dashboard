@@ -44,6 +44,16 @@
   text-align: right;
 }
 
+.ellipsis {
+  cursor: pointer;
+  fill: var(--paleBlue);
+  transition: var(--fastTransition);
+}
+
+.ellipsis:hover, .ellipsis:active {
+  fill: white;
+}
+
 .title {
   font-size: var(--titleFontSize);
 }
