@@ -13,10 +13,6 @@
     row-gap: 32px;
   }
 
-  /* .dashboard > *:first-child {
-    grid-column: 1 / span 2;
-    justify-self: center;
-  } */
   .dashboard > *:first-child {
     grid-column-start: 1;
     grid-column-end: 3;
