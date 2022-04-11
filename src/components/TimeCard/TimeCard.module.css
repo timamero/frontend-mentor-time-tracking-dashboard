@@ -22,9 +22,11 @@
 }
 
 .main {
+  position: relative;
+  cursor: pointer;
   padding: 26px;
   border-radius: var(--borderRadius);
-  background-color: var(--darkBlue);
+  transition: var(--fastTransition);
 }
 
 .flexGrid {
@@ -34,23 +36,34 @@
   flex-direction: row;
   align-items: center;
   row-gap: 14px;
+  z-index: 2;
 }
 
 .flexGrid > * {
   flex: 2 1 50%;
 }
 
-.ellipsis, .lastHours {
+.ellipsisWrapper, .lastHours {
   text-align: right;
 }
 
-.ellipsis {
+.ellipsisWrapper {
   cursor: pointer;
-  fill: var(--paleBlue);
-  transition: var(--fastTransition);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: inherit;
+  border-radius: inherit;
 }
 
-.ellipsis:hover, .ellipsis:active {
+.ellipsisSVG {
+  transition: var(--fastTransition);
+  fill: var(--paleBlue);
+}
+
+.ellipsisSVG:hover, .ellipsisSVG:active {
   fill: white;
 }
 
