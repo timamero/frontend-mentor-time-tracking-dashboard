@@ -45,6 +45,11 @@
   color: var(--paleBlue);
   font-family: var(--mainFont);
   font-size: 18px;
+  transition: var(--fastTransition);
+}
+
+.menu button:hover, .menu button:active {
+  color: white;
 }
 
 @media screen and (min-width: 1200px) {
