@@ -1,0 +1,152 @@
+{
+  "daily": [
+    {
+      "id": 1,
+      "title": "Work",
+      "timeframe": {
+        "current": 5,
+        "previous": 7
+      }
+    },
+    {
+      "id": 2,
+      "title": "Play",
+      "timeframe": {
+        "current": 1,
+        "previous": 2
+      }
+    },
+    {
+      "id": 3,
+      "title": "Study",
+      "timeframe": {
+        "current": 0,
+        "previous": 1
+      }
+    },
+    {
+      "id": 4,
+      "title": "Exercise",
+      "timeframe": {
+        "current": 1,
+        "previous": 1
+      }
+    },
+    {
+      "id": 5,
+      "title": "Social",
+      "timeframe": {
+        "current": 1,
+        "previous": 3
+      }
+    },
+    {
+      "id": 6,
+      "title": "Self Care",
+      "timeframe": {
+        "current": 0,
+        "previous": 1
+      }
+    }
+  ],
+  "weekly": [
+    {
+      "id": 1,
+      "title": "Work",
+      "timeframe": {
+        "current": 32,
+        "previous": 36
+      }
+    },
+    {
+      "id": 2,
+      "title": "Play",
+      "timeframe": {
+        "current": 10,
+        "previous": 8
+      }
+    },
+    {
+      "id": 3,
+      "title": "Study",
+      "timeframe": {
+        "current": 4,
+        "previous": 7
+      }
+    },
+    {
+      "id": 4,
+      "title": "Exercise",
+      "timeframe": {
+        "current": 4,
+        "previous": 5
+      }
+    },
+    {
+      "id": 5,
+      "title": "Social",
+      "timeframe": {
+        "current": 5,
+        "previous": 10
+      }
+    },
+    {
+      "id": 6,
+      "title": "Self Care",
+      "timeframe": {
+        "current": 2,
+        "previous": 2
+      }
+    }
+  ],
+  "monthly": [
+    {
+      "id": 1,
+      "title": "Work",
+      "timeframe": {
+        "current": 103,
+        "previous": 128
+      }
+    },
+    {
+      "id": 2,
+      "title": "Play",
+      "timeframe": {
+        "current": 23,
+        "previous": 29
+      }
+    },
+    {
+      "id": 3,
+      "title": "Study",
+      "timeframe": {
+        "current": 13,
+        "previous": 19
+      }
+    },
+    {
+      "id": 4,
+      "title": "Exercise",
+      "timeframe": {
+        "current": 11,
+        "previous": 18
+      }
+    },
+    {
+      "id": 5,
+      "title": "Social",
+      "timeframe": {
+        "current": 21,
+        "previous": 23
+      }
+    },
+    {
+      "id": 6,
+      "title": "Self Care",
+      "timeframe": {
+        "current": 7,
+        "previous": 11
+      }
+    }
+  ]
+}
