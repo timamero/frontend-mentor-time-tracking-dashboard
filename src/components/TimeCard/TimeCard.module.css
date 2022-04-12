@@ -43,22 +43,19 @@
   flex: 2 1 50%;
 }
 
-.ellipsisWrapper, .lastHours {
+.lastHours {
   text-align: right;
 }
 
 .ellipsisWrapper {
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  padding: inherit;
-  border-radius: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .ellipsisSVG {
+  justify-self: flex-end;
   transition: var(--fastTransition);
   fill: var(--paleBlue);
 }
