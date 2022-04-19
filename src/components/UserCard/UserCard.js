@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './UserCard.module.css'
 
-const UserCard = () => {
+const UserCard = ({ handlePeriodChange, period }) => {
   return (
     <div className={styles.card}>
       <div className={styles.header}>
@@ -12,9 +12,24 @@ const UserCard = () => {
         </div>
       </div>
       <div className={styles.menu}>
-        <button>Daily</button>
-        <button>Weekly</button>
-        <button>Monthly</button>
+        <button 
+          onClick={() => handlePeriodChange('daily')}
+          className={period === 'daily' && styles.activeBtn}
+        >
+          Daily
+        </button>
+        <button 
+          onClick={() => handlePeriodChange('weekly')}
+          className={period === 'weekly' && styles.activeBtn}
+        >
+          Weekly
+        </button>
+        <button 
+          onClick={() => handlePeriodChange('monthly')}
+          className={period === 'monthly' && styles.activeBtn}
+        >
+          Monthly
+        </button>
       </div>
     </div>
   )

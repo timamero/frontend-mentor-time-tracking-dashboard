@@ -24,7 +24,7 @@ const Dashboard = () => {
 
   return (
     <div className={styles.dashboard}>
-      <UserCard />
+      <UserCard handlePeriodChange={changePeriod} period={period}/>
       <TimeCard />
       <TimeCard />
       <TimeCard />

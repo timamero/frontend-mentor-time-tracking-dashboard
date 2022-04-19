@@ -52,6 +52,10 @@
   color: white;
 }
 
+.menu .activeBtn {
+  color: white;
+}
+
 @media screen and (min-width: 1200px) {
   .card {
     display: flex;
