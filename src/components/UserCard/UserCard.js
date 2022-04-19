@@ -14,19 +14,19 @@ const UserCard = ({ handlePeriodChange, period }) => {
       <div className={styles.menu}>
         <button 
           onClick={() => handlePeriodChange('daily')}
-          className={period === 'daily' && styles.activeBtn}
+          className={period === 'daily' ? styles.activeBtn : undefined}
         >
           Daily
         </button>
         <button 
           onClick={() => handlePeriodChange('weekly')}
-          className={period === 'weekly' && styles.activeBtn}
+          className={period === 'weekly' ? styles.activeBtn : undefined}
         >
           Weekly
         </button>
         <button 
           onClick={() => handlePeriodChange('monthly')}
-          className={period === 'monthly' && styles.activeBtn}
+          className={period === 'monthly' ? styles.activeBtn : undefined}
         >
           Monthly
         </button>
