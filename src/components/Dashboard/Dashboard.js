@@ -9,14 +9,9 @@ const Dashboard = () => {
   const [timeData, setTimeData] = useState(null)
 
   useEffect(() => {
-    console.log('getting data from period: ', period)
     axios({method: 'get', url: `http://localhost:3001/${period}`})
     .then(response => setTimeData(response.data))
   }, [period])
-
-  if (timeData) {
-    console.log('time data', timeData)
-  }
 
   const changePeriod = (newPeriod) => {
     setPeriod(newPeriod)
