@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { motion } from 'framer-motion'
 import styles from './TimeCard.module.css'
 import workIcon from '../../images/icon-work.svg'
 import playIcon from '../../images/icon-play.svg'
@@ -7,7 +8,7 @@ import exerciseIcon from '../../images/icon-exercise.svg'
 import socialIcon from '../../images/icon-social.svg'
 import selfCareIcon from '../../images/icon-self-care.svg'
 
-const TimeCard = ({ title, current, previous }) => {
+const TimeCard = ({ title, current, previous, controls }) => {
   const [mainBGColor, setMainBGColor] = useState('var(--darkBlue)')
   let headerBackground
   let icon
@@ -52,7 +53,7 @@ const TimeCard = ({ title, current, previous }) => {
   }
 
   const iconSrc = `../../images/icon-${icon}.svg`
-  
+
   return (
     <div className={styles.card}>
       <div 
@@ -82,8 +83,18 @@ const TimeCard = ({ title, current, previous }) => {
                 <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"/>
               </svg>
             </div>
-            <div className={styles.hours}>{current}hrs</div>
-            <div className={styles.lastHours}>Last Week - {previous}hrs</div>
+            <motion.div
+              className={styles.hours}
+              animate={controls}
+            >
+              {current}hrs
+            </motion.div>
+            <motion.div
+              className={styles.lastHours}
+              animate={controls}
+            >
+              Last Week - {previous}hrs
+            </motion.div>
           </div>
         </div>
       
