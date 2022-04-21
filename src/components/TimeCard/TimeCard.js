@@ -1,8 +1,43 @@
 import React, { useState } from 'react'
 import styles from './TimeCard.module.css'
+import workIcon from '../../images/icon-work.svg'
+import playIcon from '../../images/icon-play.svg'
+import studyIcon from '../../images/icon-study.svg'
+import exerciseIcon from '../../images/icon-exercise.svg'
+import socialIcon from '../../images/icon-social.svg'
+import selfCareIcon from '../../images/icon-self-care.svg'
 
-const TimeCard = () => {
+const TimeCard = ({ title, current, previous }) => {
   const [mainBGColor, setMainBGColor] = useState('var(--darkBlue)')
+  let headerBackground
+  let icon
+  switch (title) {
+    case 'Work':
+      headerBackground = 'var(--lightRed1)'
+      icon= 'work'
+      break
+    case 'Play':
+      headerBackground = 'var(--softBlue)'
+      icon= 'play'
+      break
+    case 'Study':
+      headerBackground = 'var(--lightRed2)'
+      icon= 'study'
+      break
+    case 'Exercise':
+      headerBackground = 'var(--limeGreen)'
+      icon= 'exercise'
+      break
+    case 'Social':
+      headerBackground = 'var(--violet)'
+      icon= 'social'
+      break
+    default:
+      headerBackground = 'var(--softOrange)'
+      icon= 'self-care'
+      break
+  }
+
   const handleMainEnter = (e) => {
     setMainBGColor('var(--desaturatedBlue)')
   }
@@ -16,14 +51,16 @@ const TimeCard = () => {
     setMainBGColor('var(--desaturatedBlue)')
   }
 
+  const iconSrc = `../../images/icon-${icon}.svg`
+  
   return (
     <div className={styles.card}>
       <div 
         className={styles.background}
-        style={{backgroundColor: 'var(--lightRed1)'}}
+        style={{backgroundColor: headerBackground}}
       >
         <div className={styles.iconWrapper}>
-          <img src={require('../../images/icon-work.svg')} />
+          <img src={require(iconSrc)} />
         </div>
         <div 
           className={styles.main}
@@ -32,7 +69,7 @@ const TimeCard = () => {
           onMouseLeave={handleMainLeave}
         >
           <div className={styles.flexGrid}>
-            <div className={styles.title}>Work</div>
+            <div className={styles.title}>{title}</div>
             <div className={styles.ellipsisWrapper}>
               <svg
                 className={styles.ellipsisSVG}
@@ -45,8 +82,8 @@ const TimeCard = () => {
                 <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"/>
               </svg>
             </div>
-            <div className={styles.hours}>32hrs</div>
-            <div className={styles.lastHours}>Last Week - 36hrs</div>
+            <div className={styles.hours}>{current}hrs</div>
+            <div className={styles.lastHours}>Last Week - {previous}hrs</div>
           </div>
         </div>
       
